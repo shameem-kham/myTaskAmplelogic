@@ -1,0 +1,46 @@
+#color-card{
+    display: grid;
+    position: fixed;
+    gap: 4px;
+    right: 10px;
+    top: 10px;
+    background-color: #0e57a5;
+    border: 2px solid black;
+}
+#color-card div{
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#color-card div:hover{
+    transform: scale(1.01);
+    border: 2px solid white;
+}
+#para{
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-top: 100px;
+}
+@media screen and (max-width:630px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        padding-top: 40px;
+    }
+    #color-card{
+        top: 0;
+        right: 0;
+        padding: 2px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0e57a5;
+    }
+    #color-card div{
+        height: 40px;
+        width: 80px;
+    }
+}
